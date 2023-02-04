@@ -1,0 +1,73 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body #mainHeader #mainHeader__title {
+  text-align: center;
+}
+body #countryContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+body #countryContainer #countryContainer__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+body #countryContainer #countryContainer__list .countryCard {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+body #countryContainer #countryContainer__list .countryCard.Africa {
+  background-color: ligthgreen;
+}
+body #countryContainer #countryContainer__list .countryCard.Americas {
+  background-color: ligthyellow;
+}
+body #countryContainer #countryContainer__list .countryCard.Asia {
+  background-color: #ffccbf;
+}
+body #countryContainer #countryContainer__list .countryCard.Europe {
+  background-color: lavander;
+}
+body #countryContainer #countryContainer__list .countryCard.Oceania {
+  background-color: ligthblue;
+}
+body #countryContainer #countryContainer__list .countryCard:hover .countryCard__inner {
+  transform: rotateY(180deg);
+}
+body #countryContainer #countryContainer__list .countryCard .countryCard__inner {
+  transition: transform 0.8s;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+body #countryContainer #countryContainer__list .countryCard .countryCard__inner .countryCard__front {
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+body #countryContainer #countryContainer__list .countryCard .countryCard__inner .countryCard__front .countryCard__flags {
+  width: 300px;
+  height: 200px;
+}
+body #countryContainer #countryContainer__list .countryCard .countryCard__inner .countryCard__back {
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateY(180deg);
+  width: 300px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
